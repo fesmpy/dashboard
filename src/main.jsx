@@ -12,9 +12,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path='/' component={<Home />} />
+        <Route path='/' element={<Home />} />
       </Routes>
     </Router>
-    <Home />
   </React.StrictMode>
 );
