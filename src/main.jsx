@@ -6,12 +6,15 @@ import "./index.css";
 import Home from "./components/home/Home";
 
 //react router dom
-import { HashRouter } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <HashRouter>
-      <Home />
-    </HashRouter>
+    <Router>
+      <Routes>
+        <Route exact path='/' component={<Home />} />
+      </Routes>
+    </Router>
+    <Home />
   </React.StrictMode>
 );
