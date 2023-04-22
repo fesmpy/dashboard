@@ -1,0 +1,17 @@
+:root {
+  --color-primary: #000;
+  --color-secundary: #6b6666;
+
+  /* Fonts */
+  --font-primary: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+

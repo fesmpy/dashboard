@@ -1,0 +1,247 @@
+.containerHomeLight {
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+.containerHomeDark {
+  background-color: #3b3b3b;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+.calendarStyle {
+  width: inherit;
+}
+.left {
+  width: 90%;
+  height: 90%;
+  grid-area: 1 / 1 / 3 / 4;
+  background-color: #f7f6f2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+  border-radius: 17px;
+}
+.left .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.left .title h2 {
+  color: var(--color-primary);
+  font-size: 2.2rem;
+  font-weight: 900;
+  font-family: var(--font-primary);
+}
+.left .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 30px;
+}
+.left .content .active {
+  background-color: #1f1f2f;
+  color: #7f808c;
+}
+.left .content .items {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  border-radius: 25px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.left .content img {
+  width: 32px;
+  height: 32px;
+}
+
+.center {
+  grid-area: 1 / 4 / 3 / 10;
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.centerTop {
+  height: 100%;
+}
+.center h2 {
+  color: var(--color-secundary);
+  font-weight: 500;
+  font-size: 3rem;
+  font-family: var(--font-primary);
+}
+.center .progress {
+  padding-top: 30px;
+}
+.center .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.center .title h2 {
+  font-size: 2rem;
+  color: #52525a;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.center .title .btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.center .title img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.center .title .arrowReverse {
+  transform: rotate(180deg);
+}
+.center .progress .content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.center .progress .content .item1 {
+  grid-area: 1 / 1 / 2 / 3;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.center .progress .content .item1 .percentage,
+.center .progress .content .item2 .percentage {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.item1 .percentage h2,
+.item2,
+.percentage h2 {
+  font-size: 2.5rem;
+  color: #000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+}
+.item1 .percentage h3,
+.item2,
+.percentage h3 {
+  font-size: 1.2rem;
+  color: #7f808c;
+}
+.center .progress .content .item1 img,
+.center .progress .content .item2 img {
+  width: 24px;
+  height: 24px;
+}
+.center .progress .content .item2 {
+  grid-area: 2 / 1 / 3 / 3;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.center .progress .content .graph {
+  grid-area: 1 / 3 / 3 / 7;
+}
+.centerBottom {
+  height: 100%;
+}
+.containerCalendar {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+}
+.centerBottom h2:nth-child(1) {
+  color: var(--color-secundary);
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: var(--font-primary);
+}
+
+.right {
+  grid-area: 1 / 10 / 3 / 13;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+}
+.right .nav {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 20px;
+}
+.right .nav img {
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+}
+.right .nav .iconProfileUser {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.right .content > h2 {
+  font-size: 2rem;
+  color: #7f808c;
+  font-weight: 500;
+}
+.right .content .signatures {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 30px;
+}
+.right .content .signatures .items {
+  background-color: #e5f780;
+  border-radius: 18px;
+  padding: 10px;
+}
+.right .content .signatures .items .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.right .content .signatures .items progress {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: bottom;
+  margin-top: 5px;
+}
+.right .content .signatures .items .container div:nth-child(1) > h2 {
+  font-size: calc(5px + 1vw);
+  line-height: 20px;
+}
+.right .content .signatures .items .container div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: flex-start;
+  text-align: right;
+  gap: 10px;
+}
+.right .content .signatures .items .container div:nth-child(2) > h2 {
+  font-size: 3rem;
+}
+.right .content .signatures .items .container div:nth-child(2) > span {
+  font-size: calc(2px + 1vw);
+}
