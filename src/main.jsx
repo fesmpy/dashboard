@@ -6,14 +6,14 @@ import "./index.css";
 import Home from "./components/home/Home";
 
 //react router dom
-import { HashRouter, Router, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <HashRouter>
-      <Router>
+      <Routes>
         <Route path='/' element={<Home />} />
-      </Router>
+      </Routes>
     </HashRouter>
   </React.StrictMode>
 );
